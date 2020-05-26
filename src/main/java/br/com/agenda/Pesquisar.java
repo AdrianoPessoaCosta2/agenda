@@ -48,9 +48,4 @@ public class Pesquisar extends BasePage {
         };
         formularioPesquisar.add(botaoPesquisar);
     }
-    private void pesquisar(String nome) {
-        Connection conexao = ((WicketApplication) getApplication()).getConexao();
-        ContatoDAO dao = new ContatoDAO(conexao);
-        dao.listarPorNome(nome);
-    }
 }
