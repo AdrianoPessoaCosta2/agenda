@@ -40,7 +40,7 @@ public class ContatoDAO {
     }
 
     public List<Contato> listarPorNome(String nome) {
-        String sql = "SELECT ID_CONTATO, NOME, EMAIL, TELEFONE, ESTADOCIVIL WHERE NOME LIKE ?";
+        String sql = "SELECT ID_CONTATO, NOME, EMAIL, TELEFONE, ESTADOCIVIL FROM CONTATO WHERE NOME LIKE ?";
         List<Contato> contatos = new ArrayList<Contato>();
         PreparedStatement ps = null;
         ResultSet rs = null;
