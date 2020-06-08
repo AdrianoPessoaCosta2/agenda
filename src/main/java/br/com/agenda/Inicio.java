@@ -9,5 +9,6 @@ public class Inicio extends BasePage {
     public Inicio() {
         Label labelMensagemBoasVindas = new Label("mensagemBoasVindas", Model.of("Bem vindo à agenda"));
         add(labelMensagemBoasVindas);
+        System.out.println("Test pode apagar é só um teste do git");
     }
 }
